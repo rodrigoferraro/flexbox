@@ -1,0 +1,72 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  
+  /*flex-direction: row-reverse;
+  */
+  
+  /* ALIGN-ITEMS alinha os itens no eixo contrário ao usado pelo FLEX-DIRECTION, ou seja:
+      1. se o flex-direction está definido por coluna (eixo Y)
+          então o align-items vai definir o alinhamento considerando a linha (eixo X)
+      2. se o flex-direction está definido por linha (eixo X)
+          então o align-items vai definir o alinhamento considerando a coluna (eixo Y)
+  */
+  /*align-items: center;
+  */
+  
+  /* JUSTIFY-CONTENT justifica o posicionamento dos itens no
+      MESMO eixo definido no FLEX-DIRECTION
+      1. Se o flex-direction está definido por coluna, 
+          será justificado considerando a coluna (eixo Y)
+      2. Se o flex-direction está definido por linha, 
+          será justificado considerando a linha (eixo X)
+  */
+  /*justify-content: space-between;
+  */
+
+  /* FLEX-WRAP define se pode quebrar linha dentro do container
+  */
+  flex-wrap: wrap;
+
+  /* ALIGN-CONTENT define o alinhamento dos itens dentro do container
+      quando estes itens ocupam mais de 1 linha ou mais de 1 coluna
+
+      é um complemento para a propriedade FLEX-WRAP
+  */
+  align-content: flex-start;
+}
+
+.box {
+  width: 250px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+  /* FLEX-GROW indica que os elementos deste container podem 
+      aumentar de tamanho para ocupar o espaço disponível no 
+      container PAI
+  */
+  /*flex-grow: 0;
+  */
+
+  /* FLEX-SHRINK indica que os elementos deste container podem
+      encolher de tamanho para caber no espaço disponível no 
+      container PAI
+  */
+  /*flex-shrink: 0;
+  */
+
+  /* FLEX admite os 2 parâmetros 
+      1. flex-grow
+      2. flex-shrink
+      Então o primeiro argumento define a propriedade FLEX-GROW
+      e o segundo argumento define a propriedade de FLEX-SHRINK
+  */
+  /*flex: 1 1;
+  */
+}
