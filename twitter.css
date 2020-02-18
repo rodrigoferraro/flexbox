@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* BOX-SIZING:border-box faz o padding dos elementos de forma interna
+      ou seja, não aumenta o espaço ocupado, mas sim, retira da dimensão
+      do elemento o valor do padding.
+  */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #e6ecf0;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smothing: antialiased !important;
+}
