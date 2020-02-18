@@ -32,20 +32,23 @@ body,
 
   /* FLEX-WRAP define se pode quebrar linha dentro do container
   */
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;
+  */
 
   /* ALIGN-CONTENT define o alinhamento dos itens dentro do container
       quando estes itens ocupam mais de 1 linha ou mais de 1 coluna
 
       é um complemento para a propriedade FLEX-WRAP
   */
-  align-content: flex-start;
+  /*align-content: flex-start;
+  */
+
+
 }
 
 .box {
   width: 250px;
   height: 60px;
-  background: #f00;
   margin: 5px;
   /* FLEX-GROW indica que os elementos deste container podem 
       aumentar de tamanho para ocupar o espaço disponível no 
@@ -70,3 +73,19 @@ body,
   /*flex: 1 1;
   */
 }
+
+.red {
+  background: red;
+  order: 2;
+}
+
+.green {
+  background: green;
+  order: 0;
+}
+
+.blue {
+  background: blue;
+  order: 1;
+}
+
