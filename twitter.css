@@ -12,7 +12,121 @@
 html,
 body {
   background: #e6ecf0;
-  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smothing: antialiased !important;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header#main-header {
+  height: 46px;
+  background: #fff;
+
+  box-shadow: 0 1px 1px rgba(0,0,0,.25);
+
+  /* Para a sombra do header 
+  ficar na camada superior, 
+  não ficar abaixo do Banner*/
+  position: relative;
+  z-index: 1;
+  /*===================*/
+}
+
+header#main-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+height: 100%;
+}
+
+header#main-header img {
+  height: 20px;
+  width: 20px;
+}
+
+header#main-header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header#main-header nav ul li {
+  font-size: 13px;
+  font-weight: bold;
+  color: #667580;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child {
+  margin-left: 0px;
+}
+
+header#main-header nav ul li img {
+  margin-right: 7px;
+}
+
+header#main-header div.search-group {
+  display: flex;
+}
+
+header#main-header div.search-group input {
+  width: 220px;
+  height: 34px;
+  padding: 0 30px 0 12px;
+  font-size: 12px;
+
+  border: 1px solid #e6ecf0;
+  border-radius: 16px;
+  color: #667581;
+
+  background: #f5f8fa url('/images/search.svg') no-repeat 190px center;
+}
+
+header#main-header div.search-group img {
+  height: 34px;
+  width: 35px;
+  border-radius: 50%;
+
+  margin: 0 15px;
+}
+
+header#main-header div.search-group button {
+  height: 34px;
+  background: #3bb9e3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+}
+
+div.banner {
+  height: 380px;
+  width: 100%;
+  background: #3bb9e3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255,255,255,.50);
 }
